@@ -59,7 +59,9 @@ summary { cursor: pointer; }
 .receipt { width: min(680px, 90%); margin: 34px auto 70px; border: 1px solid #6f716e; background: var(--cream); color: var(--ink); padding: clamp(25px, 5vw, 62px); box-shadow: 18px 18px 0 #ff6b5f; position: relative; }
 .receipt-no { font: 9px ui-monospace, monospace; letter-spacing: .15em; border-bottom: 1px solid #bbb8ae; padding-bottom: 12px; }
 .receipt h2 { font: 400 clamp(28px, 5vw, 56px)/1.1 Georgia, "Yu Mincho", serif; margin: 38px 0 18px; letter-spacing: -.04em; }
-.keepsake { min-height: 95px; display: flex; align-items: center; justify-content: center; overflow-wrap: anywhere; font: 700 clamp(40px, 8vw, 92px)/1 Arial, sans-serif; letter-spacing: .08em; color: var(--coral); border-block: 1px dashed #aaa79e; padding: 22px 0; }
+.keepsake { min-height: 95px; display: grid; gap: 16px; align-items: center; justify-items: center; overflow-wrap: anywhere; color: var(--coral); border-block: 1px dashed #aaa79e; padding: 18px 0 22px; }
+.keepsake span { color: #7a776f; font: 9px ui-monospace, monospace; letter-spacing: .15em; }
+.keepsake strong { max-width: 100%; text-align: center; font: 700 clamp(32px, 5vw, 60px)/1.12 Arial, sans-serif; letter-spacing: .04em; overflow-wrap: anywhere; }
 .receipt-line { font: 400 18px/1.9 Georgia, "Yu Mincho", serif; }
 .anchor { font-size: 12px; text-align: right; }.anchor strong { font-size: 18px; }
 .receipt-actions { display: flex; gap: 8px; margin-top: 28px; }.receipt-actions button { flex: 1; color: #333; border-color: #99958c; text-align: center; }

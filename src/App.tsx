@@ -205,7 +205,10 @@ export default function App() {
               <section className="receipt" aria-live="polite">
                 <p className="receipt-no">GOODBYE RECEIPT / {state.seed.toUpperCase()}</p>
                 <h2>{currentReceipt.title}</h2>
-                <div className="keepsake" aria-label={`残った文字 ${currentReceipt.keepsake}`}>{currentReceipt.keepsake}</div>
+                <div className="keepsake" aria-label={`残った文字 ${currentReceipt.keepsake}`}>
+                  <span>風のあと、残った文字</span>
+                  <strong>{currentReceipt.keepsake}</strong>
+                </div>
                 <p className="receipt-line">{currentReceipt.line}</p>
                 <p className="anchor">持って帰るもの — <strong>{currentReceipt.anchor}</strong></p>
                 <div className="receipt-actions">
